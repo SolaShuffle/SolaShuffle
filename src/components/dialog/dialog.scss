@@ -1,0 +1,92 @@
+.notice-modal {
+    border-radius: 36px;
+    inset: 50% auto auto 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(87% 87% at 49.17% -0.05%, rgb(37, 36, 78) 0%, rgb(35, 34, 79) 100%);
+    border-width: 5px 0px 0px;
+    border-style: solid;
+    border-color: rgb(47, 46, 95) rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+    // width: 400px;
+    // height: 495px;
+    padding: 36px;
+    position: relative;
+    z-index: 9999;
+    @media (max-width: 980px) {
+        inset: 0;
+        margin-right: 0;
+        transform: translate(0, 0);
+        border-radius: 0;
+        background: radial-gradient(87% 87% at 49.17% -0.05%, rgb(37, 36, 78) 0%, rgb(35, 34, 79) 100%);
+        border-width: 0px 0px 0px;
+        border-style: solid;
+        border-color: transparent;
+        width: 100%;
+        height: 100vh;
+        padding: 25px 25px;
+    }
+}
+.ReactModal__Overlay {
+    background-color: #0000008a !important;
+    backdrop-filter: blur(5px) !important;
+    z-index: 99 !important;
+}
+.btn-modal-tab {
+    z-index: 10;
+    &.active {
+        &::after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            content: "";
+            background-color: #fff;
+            height: 2px;
+            border-radius: 8px;
+            z-index: 9;
+        }
+    }
+}
+
+.btn-modal-close {
+    &:hover {
+        svg {
+            * {
+                fill: #fff;
+            }
+        }
+    }
+}
+.icon-bg {
+    width: 42px;
+    height: 42px;
+    position: relative;
+    z-index: 2;
+    svg {
+        position: relative;
+        z-index: 5;
+    }
+    .inner {
+        background: linear-gradient(180deg, #32315d 0%, #302f58 100%);
+        position: absolute;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        left: 0;
+        top: 0;
+        z-index: 4;
+        box-shadow: 0px 6.37556px 10.6259px rgba(0, 0, 0, 0.09);
+    }
+    &::before {
+        z-index: 1;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 42px;
+        height: 42px;
+        border-radius: 100%;
+        margin: -1px;
+        background: linear-gradient(180deg, #484770 0%, rgba(72, 71, 111, 0) 100%);
+    }
+}
