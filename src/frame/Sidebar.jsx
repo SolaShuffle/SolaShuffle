@@ -60,16 +60,6 @@ const jackpotTabs = [
     },
 ];
 
-const additionalTabs = [
-    {
-        path: "https://twitter.com/ImmortalsSOL",
-        name: "Twitter",
-    },
-    {
-        path: "https://discord.gg/immortalssol",
-        name: "Discord",
-    },
-];
 
 const Sidebar = ({
     isNoticeModal,
@@ -215,14 +205,7 @@ const Sidebar = ({
                     </div>
                 </div>
                 <Divider className="my-5" />
-                <div className="flex flex-col">
-                    <span className="font-bold text-mute">Additional Information</span>
-                    <div className="mt-5 flex flex-col gap-4">
-                        {additionalTabs.map((data) => {
-                            return <Tab {...data} key={data.path} type="additional" />;
-                        })}
-                    </div>
-                </div>
+                
             </div>
         </div>
     );

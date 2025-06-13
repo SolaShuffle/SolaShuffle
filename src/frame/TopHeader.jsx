@@ -17,13 +17,8 @@ const TopHeader = ({ publicKey, balance }) => {
 
     return (
         <div className="fixed hidden w-[calc(100%-260px)] bg-[#35356B] py-[21px] px-8 md:block">
-            <div className="flex items-center justify-between ">
-                <div className="flex items-center">
-                    <button className="flex items-center rounded-xl bg-btn-gradient-1 py-2.5 px-3 text-[12px]  font-[700] uppercase lg:px-5 lg:pt-2.5 lg:pb-3">
-                        <DiscordIcon />
-                        <span className="ml-2.5 hidden lg:block">login with discord</span>
-                    </button>
-                </div>
+            <div className="flex items-center justify-end ">
+                
                 <div className="flex items-center">
                     {/* 
                     <button
@@ -59,8 +54,7 @@ const TopHeader = ({ publicKey, balance }) => {
                                     </>
                                 }
 
-                                <div className="flex items-center">
-                                    <CoinIcon coin={"solana"} />
+                                <div className="flex items-center justify-center">
                                     <span className="ml-1 text-[10px] font-[600] leading-[22px]">
                                         {balance.toFixed(2)} SOL
                                     </span>

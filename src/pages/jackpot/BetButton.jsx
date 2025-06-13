@@ -422,7 +422,7 @@ const BetButton = ({ className, includeNFTs }) => {
 					{processing ? <Spinner height={24} /> : message}
 				</span>
 			</button>
-			{includeNFTs && (
+			{/* {includeNFTs && (
 				<button
 					style={{
 						background: `${
@@ -451,7 +451,7 @@ const BetButton = ({ className, includeNFTs }) => {
 				>
 					<img className="h-8 w-8 fill-white" src={NFTLogo} alt="" />
 				</button>
-			)}
+			)} */}
 		</div>
 	);
 };

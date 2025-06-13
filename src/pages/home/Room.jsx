@@ -22,7 +22,9 @@ const Room = (props) => {
 						backgroundImage: `url(${props.coverImage})`,
 					}}
 					className="h-full overflow-hidden rounded-[22px] border-2 border-[#C0C0E71F] bg-cover bg-center bg-no-repeat"
-				></div>
+				>
+					<img src="https://www.solanashuffle.com/assets/udao_WEBSITE-84680d9c.png" alt="" />
+				</div>
 
 				<div
 					style={{

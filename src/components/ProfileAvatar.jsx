@@ -34,7 +34,7 @@ export default function ProfileAvatar({ size, publicKey }) {
         } else if (userQuery.data.image === "") {
             return defaultAvatar;
         } else {
-            return userQuery.data.image;
+            return defaultAvatar;
         }
     }, [publicKey, userQuery]);
 
@@ -109,9 +109,9 @@ export default function ProfileAvatar({ size, publicKey }) {
                             alt=""
                         />
                         <span className="absolute left-1/2 top-1/2 mt-[0.5px] -translate-x-1/2 -translate-y-1/2 text-[7.7px] font-bold leading-[11px] text-white">
-                            {userQuery.isSuccess && userQuery.data?.stats
+                            {/* {userQuery.isSuccess && userQuery.data?.stats
                                 ? userQuery.data?.stats.level.value
-                                : 0}
+                                : 0} */}
                         </span>
                     </div>
                 </div>
